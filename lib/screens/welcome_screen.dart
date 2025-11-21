@@ -51,7 +51,7 @@ class WelcomeScreen extends StatelessWidget {
                   child: WelcomeButton(
                     label: 'Get Started',
                     onPressed: () {
-                      Navigator.of(context).pushReplacementNamed('/home');
+                      Navigator.of(context).pushReplacementNamed('/main');
                     },
                   ),
                 ),

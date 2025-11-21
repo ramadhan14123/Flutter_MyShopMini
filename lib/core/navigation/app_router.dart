@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import '../../screens/welcome_screen.dart';
-import '../../screens/home_screen.dart';
+import '../../screens/main_screen.dart';
 
 class AppRoutes {
   static const welcome = '/welcome';
-  static const home = '/home';
+  static const main = '/main';
 }
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case AppRoutes.welcome:
-        return _fade( const WelcomeScreen(), settings);
-      case AppRoutes.home:
-        return _fade( const HomeScreen(), settings);
+        return _fade(const WelcomeScreen(), settings);
+      case AppRoutes.main:
+        return _fade(const MainScreen(), settings);
       default:
-        return _fade( const WelcomeScreen(), settings);
+        return _fade(const WelcomeScreen(), settings);
     }
   }
 

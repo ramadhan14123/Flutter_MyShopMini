@@ -3,6 +3,7 @@ import 'package:feather_icons/feather_icons.dart';
 
 /// Centralized icon mapping using Feather (outline, minimal, consistent stroke).
 class AppIcons {
+  static const IconData home = FeatherIcons.home;
   static const IconData user = FeatherIcons.user;
   static const IconData cart = FeatherIcons.shoppingCart;
   static const IconData search = FeatherIcons.search;
