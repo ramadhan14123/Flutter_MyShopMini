@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Mega Sale Weekend",
+    "subtitle": "Diskon sampai 50% hari ini saja",
+    "color": "#FF8A00",
+    "imageUrl": "https://picsum.photos/900/400?random=11"
+  },
+  {
+    "id": 2,
+    "title": "New Arrivals",
+    "subtitle": "Produk fashion terbaru masuk",
+    "color": "#FF2D72",
+    "imageUrl": "https://picsum.photos/900/400?random=22"
+  },
+  {
+    "id": 3,
+    "title": "Gratis Ongkir",
+    "subtitle": "Belanja minimal 150K seluruh Indonesia",
+    "color": "#2579F2",
+    "imageUrl": "https://picsum.photos/900/400?random=33"
+  },
+  {
+    "id": 4,
+    "title": "Voucher Member",
+    "subtitle": "Khusus pengguna baru + poin ekstra",
+    "color": "#7A5AF8",
+    "imageUrl": "https://picsum.photos/900/400?random=44"
+  }
+]

@@ -2,7 +2,6 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/icons/app_icons.dart';
 import '../../widgets/category/category_scroller.dart';
 
-/// Factory function rather than static final to allow hot reload picking changes.
 List<CategoryData> defaultCategories() => <CategoryData>[
   CategoryData('Fashion', AppIcons.fashion, AppColors.accentPink),
   CategoryData('Electronics', AppIcons.electronics, AppColors.accentOrange),

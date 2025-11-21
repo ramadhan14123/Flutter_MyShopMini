@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
 
   // Badge counts untuk notifikasi (contoh: keranjang)
   final Map<String, int> _badgeCounts = {
-    '/home': 2,
+    '/home': 0,
     '/categories': 0,
     '/orders': 0,
     '/profile': 0,

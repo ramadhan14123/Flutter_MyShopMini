@@ -6,6 +6,7 @@ import '../core/theme/spacing/app_spacing.dart';
 import '../core/theme/icons/app_icons.dart';
 import '../widgets/category/category_scroller.dart';
 import '../data/mock/default_categories.dart';
+import '../widgets/carousel/promo_carousel.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,6 +44,8 @@ class HomeScreen extends StatelessWidget {
           child: ListView(
             children: [
               CategoryScroller(categories: defaultCategories(), onViewAll: () {}),
+              const SizedBox(height: AppSpacing.xl),
+              const PromoBannerCarousel(),
               const SizedBox(height: AppSpacing.xl),
             ],
           ),
