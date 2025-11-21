@@ -20,7 +20,7 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
     this.leftActions = const [],
     this.rightActions = const [],
     this.height = 64,
-    this.padding = const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.sm),
+    this.padding = const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.md),
     this.customTitle,
   });
 

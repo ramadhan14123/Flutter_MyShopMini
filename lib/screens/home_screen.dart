@@ -3,6 +3,9 @@ import '../widgets/header/app_header.dart';
 import '../widgets/header/animated_search_field.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/spacing/app_spacing.dart';
+import '../core/theme/icons/app_icons.dart';
+import '../widgets/category/category_scroller.dart';
+import '../data/mock/default_categories.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,7 +20,7 @@ class HomeScreen extends StatelessWidget {
         customTitle: const CircleAvatar(
           radius: 18,
           backgroundColor: AppColors.accentBlue,
-          child: Icon(Icons.person, color: Colors.white),
+          child: Icon(AppIcons.user, color: Colors.white, size: 18),
         ),
         leftActions: [
           AnimatedSearchField(
@@ -29,25 +32,20 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             tooltip: 'Keranjang',
             onPressed: () {},
-            icon: const Icon(Icons.shopping_cart_outlined, color: AppColors.textPrimary),
+            icon: const Icon(AppIcons.cart, color: AppColors.textPrimary),
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(AppSpacing.lg),
-        child: ListView(
-          children: const [
-            SizedBox(height: AppSpacing.lg),
-            Text(
-              'Beranda MiniShop',
-              style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.w600),
-            ),
-            SizedBox(height: AppSpacing.md),
-            Text(
-              'Konten awal nanti meliputi banner promo, kategori, dan produk populer.',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
-            ),
-          ],
+      body: Container(
+        decoration: const BoxDecoration(gradient: AppGradients.backgroundGradient),
+        child: Padding(
+          padding: const EdgeInsets.all(AppSpacing.lg),
+          child: ListView(
+            children: [
+              CategoryScroller(categories: defaultCategories(), onViewAll: () {}),
+              const SizedBox(height: AppSpacing.xl),
+            ],
+          ),
         ),
       ),
     );

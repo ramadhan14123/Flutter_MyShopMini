@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/spacing/app_spacing.dart';
 import '../../core/theme/typography/app_typography.dart';
+import '../../core/theme/icons/app_icons.dart';
 import '../../core/responsive/responsive.dart';
 
 class AnimatedSearchField extends StatefulWidget {
@@ -83,7 +84,7 @@ class _AnimatedSearchFieldState extends State<AnimatedSearchField> {
               constraints: const BoxConstraints(minWidth: iconBoxWidth, minHeight: 40),
               onPressed: _toggle,
               icon: Icon(
-                _expanded ? Icons.close : Icons.search,
+                _expanded ? AppIcons.close : AppIcons.search,
                 color: AppColors.textPrimary,
                 size: AppSpacing.iconMd,
               ),

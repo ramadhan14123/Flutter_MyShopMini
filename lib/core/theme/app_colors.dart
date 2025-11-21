@@ -59,6 +59,19 @@ class AppGradients {
     center: Alignment.center,
     radius: 0.8,
   );
+
+  // Subtle background gradient for modern, futuristic feel
+  static const backgroundGradient = LinearGradient(
+    colors: [
+      AppColors.backgroundMain,
+      Color(0xFF0D0C15), // slightly warmer than backgroundDeep
+      Color(0xFF120910), // hint of pink (accentPink very faded)
+      AppColors.backgroundMain,
+    ],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomRight,
+    stops: [0.0, 0.35, 0.7, 1.0],
+  );
 }
 
 class AppHierarchy {

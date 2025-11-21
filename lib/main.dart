@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'core/theme/app_colors.dart';
 import 'core/navigation/app_router.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
+  debugPaintSizeEnabled = false;
   runApp(const MyApp());
 }
 
