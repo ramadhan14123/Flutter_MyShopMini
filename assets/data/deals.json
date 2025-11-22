@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Running Shoes",
+    "imageUrl": "https://picsum.photos/seed/shoes/400/400",
+    "discountText": "Upto 40% OFF",
+    "accentColor": "#FF6A3D"
+  },
+  {
+    "id": 2,
+    "title": "Sneakers",
+    "imageUrl": "https://picsum.photos/seed/sneakers/400/400",
+    "discountText": "40-60% OFF",
+    "accentColor": "#EA4B71"
+  },
+  {
+    "id": 3,
+    "title": "Wrist Watches",
+    "imageUrl": "https://picsum.photos/seed/watch/400/400",
+    "discountText": "Upto 40% OFF",
+    "accentColor": "#3B82F6"
+  },
+  {
+    "id": 4,
+    "title": "Bluetooth Speakers",
+    "imageUrl": "https://picsum.photos/seed/speaker/400/400",
+    "discountText": "40-60% OFF",
+    "accentColor": "#EA4B71"
+  }
+]

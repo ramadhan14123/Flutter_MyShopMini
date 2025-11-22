@@ -7,6 +7,7 @@ import '../core/theme/icons/app_icons.dart';
 import '../widgets/category/category_scroller.dart';
 import '../data/mock/default_categories.dart';
 import '../widgets/carousel/promo_carousel.dart';
+import '../widgets/deals/deal_of_day_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -44,8 +45,13 @@ class HomeScreen extends StatelessWidget {
           child: ListView(
             children: [
               CategoryScroller(categories: defaultCategories(), onViewAll: () {}),
-              const SizedBox(height: AppSpacing.xl),
+              const SizedBox(height: AppSpacing.sm),
               const PromoBannerCarousel(),
+              const SizedBox(height: AppSpacing.xl),
+              DealOfDaySection(
+                endTime: DateTime.now().add(const Duration(hours: 11, minutes: 15, seconds: 4)),
+                onViewAll: () {},
+              ),
               const SizedBox(height: AppSpacing.xl),
             ],
           ),
