@@ -10,6 +10,7 @@ import '../widgets/carousel/promo_carousel.dart';
 import '../widgets/deals/deal_of_day_section.dart';
 import 'package:my_minishop/widgets/products/hot_selling_section.dart';
 import 'package:my_minishop/widgets/products/recommended_section.dart';
+import 'product_search_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -32,6 +33,14 @@ class HomeScreen extends StatelessWidget {
             },
             onClose: () {
             },
+            onSubmitted: (query) {
+              if (query.trim().isEmpty) return;
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => ProductSearchScreen(initialQuery: query),
+                ),
+              );
+            },
           ),
           IconButton(
             tooltip: 'Keranjang',
@@ -46,7 +55,20 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(AppSpacing.lg),
           child: ListView(
             children: [
-              CategoryScroller(categories: defaultCategories(), onViewAll: () {}),
+              CategoryScroller(
+                categories: defaultCategories(),
+                onViewAll: () {},
+                onCategoryTap: (categoryName) {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => ProductSearchScreen(
+                        initialQuery: '',
+                        filterCategory: categoryName,
+                      ),
+                    ),
+                  );
+                },
+              ),
               //Carousel
               const SizedBox(height: AppSpacing.sm),
               const PromoBannerCarousel(),

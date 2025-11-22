@@ -8,12 +8,14 @@ import '../../core/responsive/responsive.dart';
 class AnimatedSearchField extends StatefulWidget {
   final ValueChanged<String>? onChanged;
   final VoidCallback? onClose;
+  final ValueChanged<String>? onSubmitted; // untuk navigasi ke search screen
   final String hint;
   final double? expandedWidth; 
   const AnimatedSearchField({
     super.key,
     this.onChanged,
     this.onClose,
+    this.onSubmitted,
     this.hint = 'Cari produk...',
     this.expandedWidth,
   });
@@ -69,6 +71,7 @@ class _AnimatedSearchFieldState extends State<AnimatedSearchField> {
                         focusNode: _focusNode,
                         hint: widget.hint,
                         onChanged: widget.onChanged,
+                        onSubmitted: widget.onSubmitted,
                       )
                     : const SizedBox.shrink(),
               ),
@@ -101,11 +104,13 @@ class _FieldShell extends StatelessWidget {
   final FocusNode focusNode;
   final String hint;
   final ValueChanged<String>? onChanged;
+  final ValueChanged<String>? onSubmitted;
   const _FieldShell({
     required this.controller,
     required this.focusNode,
     required this.hint,
     this.onChanged,
+    this.onSubmitted,
   });
 
   @override
@@ -121,6 +126,8 @@ class _FieldShell extends StatelessWidget {
         focusNode: focusNode,
         controller: controller,
         onChanged: onChanged,
+        onSubmitted: onSubmitted,
+        textInputAction: TextInputAction.search,
         style: AppTypography.bodyMedium.copyWith(color: AppColors.textPrimary),
         cursorColor: AppColors.accentPink,
         decoration: InputDecoration(

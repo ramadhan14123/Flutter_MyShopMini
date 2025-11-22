@@ -6,10 +6,11 @@ class AppIcons {
   static const IconData home = FeatherIcons.home;
   static const IconData user = FeatherIcons.user;
   static const IconData cart = FeatherIcons.shoppingCart;
-  static const IconData bag = FeatherIcons.shoppingBag; // bag/tote style, berbeda dari cart
+  static const IconData bag = FeatherIcons.shoppingBag;
   static const IconData search = FeatherIcons.search;
   static const IconData close = FeatherIcons.x;
   static const IconData heart = FeatherIcons.heart;
+  static const IconData share = FeatherIcons.share2;
   static const IconData filter = FeatherIcons.sliders;
   static const IconData category = FeatherIcons.grid;
   // Category specific

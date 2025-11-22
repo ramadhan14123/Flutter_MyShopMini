@@ -1,0 +1,667 @@
+[
+  {
+    "id": 1,
+    "name": "Adidas White Sneakers",
+    "category": "Fashion",
+    "subcategory": "Footwear - Sneakers",
+    "price": 68.0,
+    "oldPrice": 136.0,
+    "rating": 4.8,
+    "ratingCount": 692,
+    "thumbnail": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+      "https://images.unsplash.com/photo-1542291024-7b3c62b28b17?w=800",
+      "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=800"
+    ],
+    "description": "Sneakers putih klasik dengan bahan breathable dan midsole ringan.",
+    "details": {
+      "brand": "Adidas",
+      "color": "White",
+      "stock": "12",
+      "sizes": "38,39,40,41,42,43,44",
+      "Material": "Mesh & Synthetic",
+      "Gender": "Unisex"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Nike Black Running Shoes",
+    "category": "Fashion",
+    "subcategory": "Footwear - Running",
+    "price": 75.0,
+    "oldPrice": 90.0,
+    "rating": 4.2,
+    "ratingCount": 412,
+    "thumbnail": "https://images.unsplash.com/photo-1603808033192-87dfc9f3d9a2?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1603808033192-87dfc9f3d9a2?w=800",
+      "https://images.unsplash.com/photo-1603808033009-a7b74c9f730e?w=800"
+    ],
+    "description": "Sepatu lari dengan stabilitas tinggi dan outsole traksi multi-surface.",
+    "details": {
+      "brand": "Nike",
+      "color": "Black",
+      "stock": "8",
+      "sizes": "39,40,41,42,43,44,45",
+      "Material": "Engineered Mesh",
+      "Technology": "Dynamic Support",
+      "Weight": "240g"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cotton T-Shirt - Men's",
+    "category": "Fashion",
+    "subcategory": "Men's Tops",
+    "price": 24.0,
+    "oldPrice": 35.0,
+    "rating": 4.3,
+    "ratingCount": 156,
+    "thumbnail": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800"
+    ],
+    "description": "T-shirt katun premium dengan fit reguler untuk pria, nyaman dipakai sehari-hari.",
+    "details": {
+      "brand": "Uniqlo",
+      "color": "White",
+      "stock": "25",
+      "sizes": "S,M,L,XL,XXL",
+      "Material": "100% Cotton",
+      "Fit": "Regular",
+      "Gender": "Men"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Casual Flannel Shirt - Men's",
+    "category": "Fashion",
+    "subcategory": "Men's Tops",
+    "price": 42.0,
+    "oldPrice": 65.0,
+    "rating": 4.5,
+    "ratingCount": 203,
+    "thumbnail": "https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?w=800"
+    ],
+    "description": "Kemeja flannel kotak-kotak untuk gaya kasual pria dengan bahan lembut.",
+    "details": {
+      "brand": "H&M",
+      "color": "Blue Checkered",
+      "stock": "15",
+      "sizes": "S,M,L,XL",
+      "Material": "Cotton Flannel",
+      "Fit": "Slim",
+      "Gender": "Men"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Slim Fit Jeans - Men's",
+    "category": "Fashion",
+    "subcategory": "Men's Bottoms",
+    "price": 58.0,
+    "oldPrice": 89.0,
+    "rating": 4.6,
+    "ratingCount": 312,
+    "thumbnail": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800",
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800"
+    ],
+    "description": "Celana jeans slim fit dengan wash dark untuk tampilan kasual modern pria.",
+    "details": {
+      "brand": "Levi's",
+      "color": "Dark Blue",
+      "stock": "18",
+      "sizes": "28,30,32,34,36,38",
+      "Material": "Denim",
+      "Fit": "Slim",
+      "Gender": "Men"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Floral Maxi Dress - Women's",
+    "category": "Fashion",
+    "subcategory": "Women's Dresses",
+    "price": 68.0,
+    "oldPrice": 98.0,
+    "rating": 4.8,
+    "ratingCount": 245,
+    "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800",
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800"
+    ],
+    "description": "Maxi dress dengan motif floral untuk tampilan feminin dan elegan.",
+    "details": {
+      "brand": "Zara",
+      "color": "Floral Multi",
+      "stock": "12",
+      "sizes": "S,M,L,XL",
+      "Material": "Chiffon",
+      "Length": "Maxi",
+      "Gender": "Women"
+    }
+  },
+  {
+    "id": 7,
+    "name": "High Waist Skinny Jeans - Women's",
+    "category": "Fashion",
+    "subcategory": "Women's Bottoms",
+    "price": 54.0,
+    "oldPrice": 78.0,
+    "rating": 4.6,
+    "ratingCount": 267,
+    "thumbnail": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800"
+    ],
+    "description": "Jeans skinny high waist untuk wanita dengan stretch yang nyaman.",
+    "details": {
+      "brand": "Levi's",
+      "color": "Black",
+      "stock": "20",
+      "sizes": "26,28,30,32,34",
+      "Material": "Stretch Denim",
+      "Fit": "Skinny",
+      "Gender": "Women"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Wireless Bluetooth Earbuds",
+    "category": "Electronics",
+    "subcategory": "Audio - Earphones",
+    "price": 89.0,
+    "oldPrice": 129.0,
+    "rating": 4.5,
+    "ratingCount": 432,
+    "thumbnail": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800",
+      "https://images.unsplash.com/photo-1606841837239-c5a1a4a07af7?w=800"
+    ],
+    "description": "Earbuds wireless dengan noise cancellation aktif dan baterai tahan lama.",
+    "details": {
+      "brand": "Sony",
+      "color": "Black",
+      "stock": "18",
+      "sizes": "One Size",
+      "Battery Life": "24 hours",
+      "Bluetooth": "5.0",
+      "Water Resistant": "IPX4"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Smart Watch Fitness Tracker",
+    "category": "Electronics",
+    "subcategory": "Wearables - Smartwatch",
+    "price": 149.0,
+    "oldPrice": 199.0,
+    "rating": 4.6,
+    "ratingCount": 567,
+    "thumbnail": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800"
+    ],
+    "description": "Smartwatch dengan heart rate monitor, GPS, dan tracking aktivitas 24/7.",
+    "details": {
+      "brand": "Fitbit",
+      "color": "Black",
+      "stock": "14",
+      "sizes": "One Size",
+      "Strap Size": "S/M/L",
+      "Display": "1.4 inch AMOLED",
+      "Battery": "7 days",
+      "Water Resistant": "50M"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Portable Power Bank 20000mAh",
+    "category": "Electronics",
+    "subcategory": "Accessories - Power Bank",
+    "price": 35.0,
+    "oldPrice": 55.0,
+    "rating": 4.4,
+    "ratingCount": 289,
+    "thumbnail": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800"
+    ],
+    "description": "Power bank kapasitas besar dengan fast charging untuk semua device.",
+    "details": {
+      "brand": "Anker",
+      "color": "Black",
+      "stock": "35",
+      "sizes": "One Size",
+      "Capacity": "20000mAh",
+      "Output": "18W Fast Charge",
+      "Ports": "2 USB + 1 USB-C"
+    }
+  },
+  {
+    "id": 11,
+    "name": "4K Action Camera",
+    "category": "Electronics",
+    "subcategory": "Cameras - Action Cam",
+    "price": 189.0,
+    "oldPrice": 249.0,
+    "rating": 4.7,
+    "ratingCount": 345,
+    "thumbnail": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800"
+    ],
+    "description": "Action camera 4K dengan image stabilization dan waterproof casing.",
+    "details": {
+      "brand": "GoPro",
+      "color": "Black",
+      "stock": "9",
+      "sizes": "One Size",
+      "Resolution": "4K 60fps",
+      "Stabilization": "HyperSmooth",
+      "Waterproof": "10M"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Coffee Maker Machine",
+    "category": "Appliances",
+    "subcategory": "Kitchen - Coffee Maker",
+    "price": 125.0,
+    "oldPrice": 179.0,
+    "rating": 4.5,
+    "ratingCount": 198,
+    "thumbnail": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=800"
+    ],
+    "description": "Mesin kopi otomatis dengan grinder built-in dan temperature control.",
+    "details": {
+      "brand": "Philips",
+      "color": "Silver",
+      "stock": "8",
+      "sizes": "One Size",
+      "Capacity": "1.2L",
+      "Power": "1450W",
+      "Features": "Auto Grinder"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Air Fryer 5L",
+    "category": "Appliances",
+    "subcategory": "Kitchen - Air Fryer",
+    "price": 89.0,
+    "oldPrice": 135.0,
+    "rating": 4.7,
+    "ratingCount": 423,
+    "thumbnail": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1585515320310-259814833e62?w=800"
+    ],
+    "description": "Air fryer dengan kapasitas 5L untuk memasak tanpa minyak yang lebih sehat.",
+    "details": {
+      "brand": "Tefal",
+      "color": "Black",
+      "stock": "15",
+      "sizes": "One Size",
+      "Capacity": "5 Liters",
+      "Power": "1700W",
+      "Temperature": "80-200°C"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Vacuum Cleaner Robot",
+    "category": "Appliances",
+    "subcategory": "Home - Vacuum",
+    "price": 299.0,
+    "oldPrice": 449.0,
+    "rating": 4.6,
+    "ratingCount": 312,
+    "thumbnail": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800"
+    ],
+    "description": "Robot vacuum dengan smart mapping dan auto-charging untuk pembersihan otomatis.",
+    "details": {
+      "brand": "Xiaomi",
+      "color": "White",
+      "stock": "7",
+      "sizes": "One Size",
+      "Battery": "5200mAh",
+      "Runtime": "150 minutes",
+      "Features": "Smart Mapping"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Electric Kettle 1.7L",
+    "category": "Appliances",
+    "subcategory": "Kitchen - Kettle",
+    "price": 32.0,
+    "oldPrice": 48.0,
+    "rating": 4.3,
+    "ratingCount": 267,
+    "thumbnail": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800"
+    ],
+    "description": "Teko listrik dengan auto shut-off dan indikator LED untuk keamanan.",
+    "details": {
+      "brand": "Russell Hobbs",
+      "color": "Silver",
+      "stock": "22",
+      "sizes": "One Size",
+      "Capacity": "1.7L",
+      "Power": "2200W",
+      "Features": "Auto Shut-off"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Hydrating Face Serum",
+    "category": "Beauty",
+    "subcategory": "Skincare - Serum",
+    "price": 45.0,
+    "oldPrice": 68.0,
+    "rating": 4.8,
+    "ratingCount": 456,
+    "thumbnail": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800"
+    ],
+    "description": "Serum wajah dengan hyaluronic acid untuk hidrasi maksimal dan kulit glowing.",
+    "details": {
+      "brand": "The Ordinary",
+      "color": "Clear",
+      "stock": "28",
+      "sizes": "One Size",
+      "Volume": "30ml",
+      "Type": "Hyaluronic Acid",
+      "Skin Type": "All Types",
+      "Features": "Hydrating"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Matte Lipstick Set",
+    "category": "Beauty",
+    "subcategory": "Makeup - Lipstick",
+    "price": 28.0,
+    "oldPrice": 42.0,
+    "rating": 4.5,
+    "ratingCount": 312,
+    "thumbnail": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800"
+    ],
+    "description": "Set lipstik matte dengan 5 warna pilihan yang tahan lama dan tidak kering.",
+    "details": {
+      "brand": "MAC",
+      "color": "Multi",
+      "stock": "19",
+      "sizes": "One Size",
+      "Finish": "Matte",
+      "Features": "Long Lasting",
+      "Content": "5 Shades"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Hair Dryer Professional",
+    "category": "Beauty",
+    "subcategory": "Hair Care - Dryer",
+    "price": 78.0,
+    "oldPrice": 115.0,
+    "rating": 4.6,
+    "ratingCount": 234,
+    "thumbnail": "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800"
+    ],
+    "description": "Hair dryer profesional dengan ion technology untuk rambut halus berkilau.",
+    "details": {
+      "brand": "Dyson",
+      "color": "Pink",
+      "stock": "11",
+      "sizes": "One Size",
+      "Power": "1800W",
+      "Technology": "Ionic",
+      "Heat Settings": "3 Levels"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Perfume Eau de Parfum",
+    "category": "Beauty",
+    "subcategory": "Fragrance - Perfume",
+    "price": 95.0,
+    "oldPrice": 135.0,
+    "rating": 4.7,
+    "ratingCount": 189,
+    "thumbnail": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800"
+    ],
+    "description": "Eau de parfum dengan aroma floral woody untuk wanita yang elegan.",
+    "details": {
+      "brand": "Chanel",
+      "color": "Clear",
+      "stock": "16",
+      "sizes": "One Size",
+      "Volume": "50ml",
+      "Type": "Eau de Parfum",
+      "Notes": "Floral Woody",
+      "Gender": "Women"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Modern Sofa 3-Seater",
+    "category": "Furniture",
+    "subcategory": "Living Room - Sofa",
+    "price": 599.0,
+    "oldPrice": 849.0,
+    "rating": 4.6,
+    "ratingCount": 145,
+    "thumbnail": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
+    ],
+    "description": "Sofa modern 3 dudukan dengan bahan fabric premium dan busa empuk.",
+    "details": {
+      "brand": "IKEA",
+      "color": "Gray",
+      "stock": "5",
+      "sizes": "One Size",
+      "Dimensions": "200x90x85cm",
+      "Material": "Fabric",
+      "Seats": "3 Seater",
+      "Assembly": "Required"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Dining Table Set",
+    "category": "Furniture",
+    "subcategory": "Dining Room - Table",
+    "price": 449.0,
+    "oldPrice": 649.0,
+    "rating": 4.5,
+    "ratingCount": 98,
+    "thumbnail": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800"
+    ],
+    "description": "Set meja makan kayu solid dengan 4 kursi untuk ruang makan keluarga.",
+    "details": {
+      "brand": "Ashley",
+      "color": "Brown",
+      "stock": "4",
+      "sizes": "One Size",
+      "Dimensions": "120x80x75cm",
+      "Material": "Solid Wood",
+      "Chairs": "4 pieces",
+      "Assembly": "Required"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Office Desk with Drawers",
+    "category": "Furniture",
+    "subcategory": "Office - Desk",
+    "price": 289.0,
+    "oldPrice": 399.0,
+    "rating": 4.4,
+    "ratingCount": 167,
+    "thumbnail": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800"
+    ],
+    "description": "Meja kerja dengan laci penyimpanan untuk home office atau kantor.",
+    "details": {
+      "brand": "Herman Miller",
+      "color": "White",
+      "stock": "8",
+      "sizes": "One Size",
+      "Dimensions": "140x60x75cm",
+      "Material": "MDF",
+      "Drawers": "3 pieces",
+      "Features": "Cable Management"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Bookshelf 5-Tier",
+    "category": "Furniture",
+    "subcategory": "Storage - Shelf",
+    "price": 125.0,
+    "oldPrice": 189.0,
+    "rating": 4.3,
+    "ratingCount": 134,
+    "thumbnail": "https://images.unsplash.com/photo-1594620302200-9a762244a156?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1594620302200-9a762244a156?w=800"
+    ],
+    "description": "Rak buku 5 tingkat dengan desain minimalis untuk penyimpanan maksimal.",
+    "details": {
+      "brand": "IKEA",
+      "color": "Oak",
+      "stock": "12",
+      "sizes": "One Size",
+      "Dimensions": "80x30x180cm",
+      "Material": "Engineered Wood",
+      "Shelves": "5 Tiers",
+      "Assembly": "Easy"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Yoga Mat Premium",
+    "category": "Sports",
+    "subcategory": "Fitness - Yoga",
+    "price": 38.0,
+    "oldPrice": 55.0,
+    "rating": 4.7,
+    "ratingCount": 423,
+    "thumbnail": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800"
+    ],
+    "description": "Matras yoga premium dengan permukaan anti-slip dan cushioning tebal.",
+    "details": {
+      "brand": "Lululemon",
+      "color": "Purple",
+      "stock": "32",
+      "sizes": "One Size",
+      "Dimensions": "183x61x0.6cm",
+      "Material": "TPE",
+      "Thickness": "6mm",
+      "Features": "Non-Slip"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Dumbbell Set 20kg",
+    "category": "Sports",
+    "subcategory": "Fitness - Weights",
+    "price": 85.0,
+    "oldPrice": 125.0,
+    "rating": 4.6,
+    "ratingCount": 289,
+    "thumbnail": "https://images.unsplash.com/photo-1591940742878-13aba4b73da0?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1591940742878-13aba4b73da0?w=800"
+    ],
+    "description": "Set dumbbell adjustable dengan total berat 20kg untuk home workout.",
+    "details": {
+      "brand": "Bowflex",
+      "color": "Black",
+      "stock": "14",
+      "sizes": "One Size",
+      "Weight": "20kg Total",
+      "Material": "Cast Iron",
+      "Type": "Adjustable",
+      "Range": "2.5-10kg"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Basketball Official Size",
+    "category": "Sports",
+    "subcategory": "Ball Sports - Basketball",
+    "price": 42.0,
+    "oldPrice": 58.0,
+    "rating": 4.5,
+    "ratingCount": 201,
+    "thumbnail": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800"
+    ],
+    "description": "Bola basket ukuran resmi dengan grip optimal untuk indoor dan outdoor.",
+    "details": {
+      "brand": "Spalding",
+      "color": "Orange",
+      "stock": "25",
+      "sizes": "One Size",
+      "Ball Size": "Size 7",
+      "Material": "Composite Leather",
+      "Type": "Indoor/Outdoor",
+      "Official": "Yes"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Tennis Racket Pro",
+    "category": "Sports",
+    "subcategory": "Racket Sports - Tennis",
+    "price": 159.0,
+    "oldPrice": 229.0,
+    "rating": 4.7,
+    "ratingCount": 156,
+    "thumbnail": "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?w=800"
+    ],
+    "description": "Raket tenis profesional dengan frame carbon fiber untuk power maksimal.",
+    "details": {
+      "brand": "Wilson",
+      "color": "Black/Red",
+      "stock": "9",
+      "sizes": "One Size",
+      "Length": "27 inches",
+      "Material": "Carbon Fiber",
+      "Weight": "300g",
+      "Grip": "Size 3"
+    }
+  }
+]

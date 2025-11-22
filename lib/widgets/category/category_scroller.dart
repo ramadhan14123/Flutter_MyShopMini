@@ -14,12 +14,14 @@ class CategoryData {
 class CategoryScroller extends StatelessWidget {
   final List<CategoryData> categories;
   final VoidCallback? onViewAll;
+  final Function(String)? onCategoryTap;
   final EdgeInsetsGeometry padding;
 
   const CategoryScroller({
     super.key,
     required this.categories,
     this.onViewAll,
+    this.onCategoryTap,
     this.padding = const EdgeInsets.symmetric(vertical: AppSpacing.md),
   });
 
@@ -58,7 +60,12 @@ class CategoryScroller extends StatelessWidget {
             padding: const EdgeInsets.only(right: AppSpacing.lg),
             itemBuilder: (context, index) {
               final c = categories[index];
-              return CategoryTile(icon: c.icon, label: c.name, tint: c.color);
+              return CategoryTile(
+                icon: c.icon,
+                label: c.name,
+                tint: c.color,
+                onTap: () => onCategoryTap?.call(c.name),
+              );
             },
             separatorBuilder: (_, __) => const SizedBox(width: AppSpacing.lg),
             itemCount: categories.length,

@@ -3,7 +3,9 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/spacing/app_spacing.dart';
 import '../../core/theme/typography/app_typography.dart';
 import 'product_models.dart';
+import '../../data/products/product_models.dart' as catalog;
 import 'product_card.dart';
+import '../../screens/product_detail_screen.dart';
 
 class HotSellingSection extends StatelessWidget {
   final String title;
@@ -65,7 +67,10 @@ class HotSellingSection extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: items.length,
                   separatorBuilder: (_, __) => const SizedBox(width: AppSpacing.md),
-                  itemBuilder: (context, index) => HotProductCard(product: items[index]),
+                  itemBuilder: (context, index) => HotProductCard(
+                    product: items[index],
+                    onTap: () => _openDetail(context, items[index]),
+                  ),
                 ),
               ),
             ],
@@ -106,5 +111,15 @@ class HotSellingSection extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Future<void> _openDetail(BuildContext context, HotProduct hp) async {
+    final repo = catalog.ProductRepository();
+    final products = await repo.loadAll();
+    final match = products.firstWhere(
+      (p) => p.id == hp.id,
+      orElse: () => products.first,
+    );
+    Navigator.of(context).push(MaterialPageRoute(builder: (_) => ProductDetailScreen(product: match)));
   }
 }

@@ -4,22 +4,38 @@ import 'package:my_minishop/core/theme/spacing/app_spacing.dart';
 import 'package:my_minishop/core/theme/typography/app_typography.dart';
 import 'package:my_minishop/widgets/products/product_models.dart';
 import 'package:my_minishop/widgets/products/product_card.dart';
+import 'package:my_minishop/data/products/product_models.dart' as catalog;
+import 'package:my_minishop/screens/product_detail_screen.dart';
 
-class RecommendedSection extends StatelessWidget {
+class RecommendedSection extends StatefulWidget {
   final String title;
   final VoidCallback? onViewAll;
 
   const RecommendedSection({super.key, this.title = 'Recommended For You', this.onViewAll});
 
   @override
+  State<RecommendedSection> createState() => _RecommendedSectionState();
+}
+
+class _RecommendedSectionState extends State<RecommendedSection> {
+  late final Future<List<HotProduct>> _future;
+
+  @override
+  void initState() {
+    super.initState();
+    _future = RecommendedRepository().load();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<HotProduct>>(
-      future: RecommendedRepository().load(),
+      future: _future,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return _skeleton();
         }
         if (snapshot.hasError || !snapshot.hasData) {
+          debugPrint('[RecommendedSection] load error: ${snapshot.error}');
           return Container(
             padding: const EdgeInsets.only(bottom: AppSpacing.sm),
             decoration: BoxDecoration(
@@ -39,11 +55,11 @@ class RecommendedSection extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: Text(title, style: AppTypography.headingSmall.copyWith(color: AppColors.textPrimary)),
+                    child: Text(widget.title, style: AppTypography.headingSmall.copyWith(color: AppColors.textPrimary)),
                   ),
                   InkWell(
                     borderRadius: BorderRadius.circular(8),
-                    onTap: onViewAll,
+                    onTap: widget.onViewAll,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
                       child: Row(
@@ -65,7 +81,10 @@ class RecommendedSection extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: items.length,
                   separatorBuilder: (_, __) => const SizedBox(width: AppSpacing.md),
-                  itemBuilder: (context, index) => HotProductCard(product: items[index]),
+                  itemBuilder: (context, index) => HotProductCard(
+                    product: items[index],
+                    onTap: () => _openDetail(context, items[index]),
+                  ),
                 ),
               ),
             ],
@@ -106,5 +125,15 @@ class RecommendedSection extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Future<void> _openDetail(BuildContext context, HotProduct hp) async {
+    final repo = catalog.ProductRepository();
+    final products = await repo.loadAll();
+    final match = products.firstWhere(
+      (p) => p.id == hp.id,
+      orElse: () => products.first,
+    );
+    Navigator.of(context).push(MaterialPageRoute(builder: (_) => ProductDetailScreen(product: match)));
   }
 }
