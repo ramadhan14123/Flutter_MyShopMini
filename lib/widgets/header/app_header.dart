@@ -12,6 +12,7 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
   final double height;
   final EdgeInsetsGeometry padding;
   final Widget? customTitle; 
+  final bool includeStatusBar; // tambahkan opsi untuk safe area atas
 
   const AppHeader({
     super.key,
@@ -20,12 +21,22 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
     this.leftActions = const [],
     this.rightActions = const [],
     this.height = 64,
-    this.padding = const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+    this.padding = const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.sm),
     this.customTitle,
+    this.includeStatusBar = true,
   });
 
   @override
-  Size get preferredSize => Size.fromHeight(height);
+  Size get preferredSize => Size.fromHeight(height + (includeStatusBar ? _statusBarHeight : 0));
+
+  double get _statusBarHeight {
+    // Mengambil viewPadding.top langsung dari platform dispatcher (works for notch)
+    final views = WidgetsBinding.instance.platformDispatcher.views;
+    if (views.isNotEmpty) {
+      return views.first.viewPadding.top;
+    }
+    return 0;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +44,12 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
         title,
         style: AppTypography.headingMedium.copyWith(color: AppColors.textPrimary),
       );
+    final topInset = includeStatusBar ? MediaQuery.of(context).padding.top : 0.0;
+    // Gabungkan padding asli dengan padding status bar agar konten turun aman
+    final resolvedPadding = padding.add(EdgeInsets.only(top: topInset));
+
     return Container(
-      padding: padding,
+      padding: resolvedPadding,
       decoration: const BoxDecoration(
         color: AppColors.backgroundDeep,
         border: Border(bottom: BorderSide(color: AppColors.surfaceMuted, width: 0.7)),
