@@ -13,7 +13,9 @@ import 'package:my_minishop/widgets/products/recommended_section.dart';
 import 'product_search_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  final VoidCallback? onNavigateToCategories;
+  
+  const HomeScreen({super.key, this.onNavigateToCategories});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +59,10 @@ class HomeScreen extends StatelessWidget {
             children: [
               CategoryScroller(
                 categories: defaultCategories(),
-                onViewAll: () {},
+                onViewAll: onNavigateToCategories ?? () {
+                  // Fallback jika dipanggil langsung tanpa callback
+                  Navigator.of(context).pushNamed('/categories');
+                },
                 onCategoryTap: (categoryName) {
                   Navigator.of(context).push(
                     MaterialPageRoute(

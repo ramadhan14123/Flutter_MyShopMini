@@ -13,6 +13,14 @@ class AppIcons {
   static const IconData share = FeatherIcons.share2;
   static const IconData filter = FeatherIcons.sliders;
   static const IconData category = FeatherIcons.grid;
+  static const IconData settings = FeatherIcons.settings;
+  static const IconData edit = FeatherIcons.edit2;
+  static const IconData mapPin = FeatherIcons.mapPin;
+  static const IconData bell = FeatherIcons.bell;
+  static const IconData creditCard = FeatherIcons.creditCard;
+  static const IconData helpCircle = FeatherIcons.helpCircle;
+  static const IconData info = FeatherIcons.info;
+  static const IconData logOut = FeatherIcons.logOut;
   // Category specific
   static const IconData fashion = FeatherIcons.shoppingBag;
   static const IconData electronics = FeatherIcons.cpu; // or monitor

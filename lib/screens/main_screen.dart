@@ -75,15 +75,15 @@ class _MainScreenState extends State<MainScreen> {
   Widget _getScreen(String route) {
     switch (route) {
       case '/home':
-        return const HomeScreen();
+        return HomeScreen(onNavigateToCategories: () => _handleNavigation('/categories'));
       case '/categories':
         return const CategoriesScreen();
       case '/orders':
-        return const OrdersScreen();
+        return OrdersScreen(onNavigateToHome: () => _handleNavigation('/home'));
       case '/profile':
         return const ProfileScreen();
       default:
-        return const HomeScreen();
+        return HomeScreen(onNavigateToCategories: () => _handleNavigation('/categories'));
     }
   }
 

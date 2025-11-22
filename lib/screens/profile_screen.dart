@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import '../widgets/header/app_header.dart';
+import '../widgets/profile/profile_header_card.dart';
+import '../widgets/profile/profile_menu_card.dart';
+import '../widgets/profile/profile_section_title.dart';
+import '../widgets/profile/profile_logout_button.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/spacing/app_spacing.dart';
-import '../core/theme/typography/app_typography.dart';
 import '../core/theme/icons/app_icons.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -15,134 +18,109 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppHeader(
         title: 'Profile',
         titleOnRight: false,
+        rightActions: [
+          IconButton(
+            icon: Icon(AppIcons.settings, color: AppColors.textPrimary),
+            tooltip: 'Settings',
+            onPressed: () {
+              // TODO: Navigate to settings
+            },
+          ),
+        ],
       ),
       body: Container(
         decoration: const BoxDecoration(gradient: AppGradients.backgroundGradient),
-        child: Padding(
+        child: ListView(
           padding: const EdgeInsets.all(AppSpacing.lg),
-          child: ListView(
-            children: [
-              // Profile Header
-              Center(
-                child: Column(
-                  children: [
-                    CircleAvatar(
-                      radius: 50,
-                      backgroundColor: AppColors.accentBlue,
-                      child: const Icon(
-                        AppIcons.user,
-                        size: 50,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: AppSpacing.md),
-                    Text(
-                      'John Doe',
-                      style: AppTypography.headingMedium,
-                    ),
-                    const SizedBox(height: AppSpacing.xs),
-                    Text(
-                      'john@example.com',
-                      style: AppTypography.bodySmall.copyWith(
-                        color: AppColors.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: AppSpacing.xl),
-              // Profile Menu
-              _buildMenuItem(
-                icon: AppIcons.user,
-                title: 'Edit Profile',
-                onTap: () {},
-              ),
-              _buildMenuItem(
-                icon: AppIcons.cart,
-                title: 'My Orders',
-                onTap: () {},
-              ),
-              _buildMenuItem(
-                icon: AppIcons.heart,
-                title: 'Wishlist',
-                onTap: () {},
-              ),
-              const SizedBox(height: AppSpacing.lg),
-              // Logout Button
-              Container(
-                decoration: BoxDecoration(
-                  color: AppColors.accentPink.withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () {},
-                    borderRadius: BorderRadius.circular(12),
-                    child: Padding(
-                      padding: const EdgeInsets.all(AppSpacing.md),
-                      child: Center(
-                        child: Text(
-                          'Logout',
-                          style: AppTypography.labelLarge.copyWith(
-                            color: AppColors.accentPink,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildMenuItem({
-    required IconData icon,
-    required String title,
-    required VoidCallback onTap,
-  }) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: AppSpacing.md),
-      decoration: BoxDecoration(
-        color: AppColors.surfaceBase,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(12),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSpacing.md,
-              vertical: AppSpacing.sm,
+          children: [
+            // Profile Header Card
+            ProfileHeaderCard(
+              name: 'Mochamad Ramdhan Alfikri',
+              email: '231080200093@umsida.ac.id',
+              imageAsset: 'assets/images/student1.JPG',
+              onEditProfile: () {
+                // TODO: Edit profile
+              },
             ),
-            child: Row(
-              children: [
-                Icon(
-                  icon,
-                  color: AppColors.accentOrange,
-                  size: 20,
+            const SizedBox(height: AppSpacing.xl),
+
+            // Account Section
+            const ProfileSectionTitle(title: 'Account'),
+            const SizedBox(height: AppSpacing.sm),
+            ProfileMenuCard(
+              items: [
+                ProfileMenuItem(
+                  icon: AppIcons.cart,
+                  title: 'My Orders',
+                  subtitle: 'Check your order status',
+                  onTap: () {},
                 ),
-                const SizedBox(width: AppSpacing.md),
-                Expanded(
-                  child: Text(
-                    title,
-                    style: AppTypography.bodyMedium,
-                  ),
+                ProfileMenuItem(
+                  icon: AppIcons.heart,
+                  title: 'Wishlist',
+                  subtitle: 'Your favorite items',
+                  onTap: () {},
                 ),
-                const Icon(
-                  Icons.arrow_forward_ios,
-                  size: 16,
-                  color: AppColors.textSecondary,
+                ProfileMenuItem(
+                  icon: AppIcons.mapPin,
+                  title: 'Addresses',
+                  subtitle: 'Manage delivery addresses',
+                  onTap: () {},
                 ),
               ],
             ),
-          ),
+            const SizedBox(height: AppSpacing.lg),
+
+            // Preferences Section
+            const ProfileSectionTitle(title: 'Preferences'),
+            const SizedBox(height: AppSpacing.sm),
+            ProfileMenuCard(
+              items: [
+                ProfileMenuItem(
+                  icon: AppIcons.bell,
+                  title: 'Notifications',
+                  subtitle: 'Manage notifications',
+                  onTap: () {},
+                ),
+                ProfileMenuItem(
+                  icon: AppIcons.creditCard,
+                  title: 'Payment Methods',
+                  subtitle: 'Manage payment options',
+                  onTap: () {},
+                ),
+              ],
+            ),
+            const SizedBox(height: AppSpacing.lg),
+
+            // Support Section
+            const ProfileSectionTitle(title: 'Support'),
+            const SizedBox(height: AppSpacing.sm),
+            ProfileMenuCard(
+              items: [
+                ProfileMenuItem(
+                  icon: AppIcons.helpCircle,
+                  title: 'Help Center',
+                  subtitle: 'Get help and support',
+                  onTap: () {},
+                ),
+                ProfileMenuItem(
+                  icon: AppIcons.info,
+                  title: 'About',
+                  subtitle: 'Learn more about us',
+                  onTap: () {},
+                ),
+              ],
+            ),
+            const SizedBox(height: AppSpacing.xl),
+
+            // Logout Button
+            ProfileLogoutButton(
+              onLogout: () {
+                // TODO: Logout
+              },
+            ),
+            const SizedBox(height: AppSpacing.xl),
+          ],
         ),
       ),
     );
