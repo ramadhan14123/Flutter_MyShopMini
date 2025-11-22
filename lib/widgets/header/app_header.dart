@@ -95,7 +95,11 @@ List<Widget> _wrapActions(List<Widget> actions) {
       out.add(w);
     }
     if (i != actions.length - 1) {
-      out.add(const SizedBox(width: AppSpacing.md));
+      // Jika elemen adalah search field, hilangkan gap sama sekali.
+      final gap = w is AnimatedSearchField ? 0.0 : AppSpacing.md;
+      if (gap > 0) {
+        out.add(SizedBox(width: gap));
+      }
     }
   }
   return out;

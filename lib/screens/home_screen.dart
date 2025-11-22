@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             tooltip: 'Keranjang',
             onPressed: () {},
-            icon: const Icon(AppIcons.cart, color: AppColors.textPrimary),
+            icon: const Icon(AppIcons.bag, color: AppColors.textPrimary),
           ),
         ],
       ),

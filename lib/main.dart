@@ -4,7 +4,7 @@ import 'core/navigation/app_router.dart';
 import 'package:flutter/rendering.dart';
 
 void main() {
-  debugPaintSizeEnabled = false;
+  debugPaintSizeEnabled = false; 
   runApp(const MyApp());
 }
 
