@@ -1,0 +1,68 @@
+[
+  {
+    "id": 101,
+    "title": "Minimalist canvas slip-on",
+    "imageUrl": "https://images.unsplash.com/photo-1585386959984-a4155222a1ad?w=800",
+    "price": 54,
+    "oldPrice": 79,
+    "discountPercent": 32,
+    "rating": 4.6,
+    "ratingCount": 148,
+    "topSeller": false
+  },
+  {
+    "id": 102,
+    "title": "Urban street high-top",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365623-1a4619c5624b?w=800",
+    "price": 88,
+    "oldPrice": 129,
+    "discountPercent": 32,
+    "rating": 4.4,
+    "ratingCount": 203,
+    "topSeller": true
+  },
+  {
+    "id": 103,
+    "title": "Lightweight trail runner",
+    "imageUrl": "https://images.unsplash.com/photo-1606813907291-d66e9f07f4bb?w=800",
+    "price": 92,
+    "oldPrice": 119,
+    "discountPercent": 23,
+    "rating": 4.8,
+    "ratingCount": 321,
+    "topSeller": false
+  },
+  {
+    "id": 104,
+    "title": "Classic leather low-top",
+    "imageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800",
+    "price": 63,
+    "oldPrice": 99,
+    "discountPercent": 36,
+    "rating": 4.3,
+    "ratingCount": 97,
+    "topSeller": false
+  },
+  {
+    "id": 105,
+    "title": "Breathable mesh runner",
+    "imageUrl": "https://images.unsplash.com/photo-1600181957074-4b160da892dc?w=800",
+    "price": 74,
+    "oldPrice": 110,
+    "discountPercent": 33,
+    "rating": 4.5,
+    "ratingCount": 245,
+    "topSeller": false
+  },
+  {
+    "id": 106,
+    "title": "Premium suede casual",
+    "imageUrl": "https://images.unsplash.com/photo-1627634777217-de3e6401139a?w=800",
+    "price": 101,
+    "oldPrice": 149,
+    "discountPercent": 32,
+    "rating": 4.7,
+    "ratingCount": 178,
+    "topSeller": true
+  }
+]

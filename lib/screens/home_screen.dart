@@ -8,6 +8,8 @@ import '../widgets/category/category_scroller.dart';
 import '../data/mock/default_categories.dart';
 import '../widgets/carousel/promo_carousel.dart';
 import '../widgets/deals/deal_of_day_section.dart';
+import 'package:my_minishop/widgets/products/hot_selling_section.dart';
+import 'package:my_minishop/widgets/products/recommended_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -45,14 +47,20 @@ class HomeScreen extends StatelessWidget {
           child: ListView(
             children: [
               CategoryScroller(categories: defaultCategories(), onViewAll: () {}),
+              //Carousel
               const SizedBox(height: AppSpacing.sm),
               const PromoBannerCarousel(),
+              //Deal of the Day
               const SizedBox(height: AppSpacing.xl),
               DealOfDaySection(
                 endTime: DateTime.now().add(const Duration(hours: 11, minutes: 15, seconds: 4)),
                 onViewAll: () {},
               ),
+              //Hot Selling & Recommended
               const SizedBox(height: AppSpacing.xl),
+              const HotSellingSection(),
+              const SizedBox(height: AppSpacing.xl),
+              const RecommendedSection(),
             ],
           ),
         ),

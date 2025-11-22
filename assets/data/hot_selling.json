@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Adidas white sneakers for men",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+    "price": 68,
+    "oldPrice": 136,
+    "discountPercent": 50,
+    "rating": 4.8,
+    "ratingCount": 692,
+    "topSeller": true
+  },
+  {
+    "id": 2,
+    "title": "Nike black running shoes for men",
+    "imageUrl": "https://images.unsplash.com/photo-1603808033192-87dfc9f3d9a2?w=800",
+    "price": 75,
+    "oldPrice": 90,
+    "discountPercent": 20,
+    "rating": 4.2,
+    "ratingCount": 412,
+    "topSeller": false
+  },
+  {
+    "id": 3,
+    "title": "New Balance 574 Classic",
+    "imageUrl": "https://images.unsplash.com/photo-1618354691546-df9cfbd6a3b3?w=800",
+    "price": 82,
+    "oldPrice": 129,
+    "discountPercent": 36,
+    "rating": 4.5,
+    "ratingCount": 268,
+    "topSeller": false
+  },
+  {
+    "id": 4,
+    "title": "Puma RS-X Reinvent",
+    "imageUrl": "https://images.unsplash.com/photo-1542291024-7b3c62b28b17?w=800",
+    "price": 71,
+    "oldPrice": 109,
+    "discountPercent": 35,
+    "rating": 4.4,
+    "ratingCount": 183,
+    "topSeller": false
+  },
+  {
+    "id": 5,
+    "title": "ASICS Gel-Kayano 30",
+    "imageUrl": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=800",
+    "price": 96,
+    "oldPrice": 120,
+    "discountPercent": 20,
+    "rating": 4.7,
+    "ratingCount": 339,
+    "topSeller": true
+  },
+  {
+    "id": 6,
+    "title": "Reebok Classic Leather",
+    "imageUrl": "https://images.unsplash.com/photo-1603808033009-a7b74c9f730e?w=800",
+    "price": 59,
+    "oldPrice": 89,
+    "discountPercent": 34,
+    "rating": 4.1,
+    "ratingCount": 204,
+    "topSeller": false
+  }
+]
